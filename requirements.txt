@@ -1,4 +1,5 @@
 argparse
 requests
-os
 openai
+numpy
+pandas
