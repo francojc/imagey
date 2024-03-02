@@ -1,12 +1,13 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 import argparse
 import requests
 import os
 from openai import OpenAI
 
+client = OpenAI()
+
 def main(model_gen, prompt_gen, size_gen, quality_gen, n_gen, name_gen):
-  client = OpenAI()
 
   response = client.images.generate(
     model=model_gen,
